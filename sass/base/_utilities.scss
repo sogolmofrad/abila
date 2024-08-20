@@ -1,0 +1,31 @@
+.u-center {
+  text-align: center !important;
+}
+
+.u-justify {
+  text-align: justify !important;
+}
+.u-m-b-6 {
+  margin-bottom: 6rem !important;
+}
+.u-m-b-8 {
+  margin-bottom: 8rem !important;
+}
+
+.u-m-b-2 {
+  margin-bottom: 2.5rem !important;
+}
+
+.u-m-t-10 {
+  margin-top: 10rem !important;
+  @include respond(tabletPort){
+    margin-top: 6rem !important;
+  }
+  @include respond(phone){
+    margin-top: 1rem !important;
+  }
+}
+
+.u-float-left {
+  float: left !important;
+}

@@ -1,0 +1,25 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  direction: rtl;
+
+ 
+  @include respond(tabletLand){font-size: 56.25%;}    //1rem = 9px
+  @include respond(tabletPort){font-size: 50%;}       //1rem = 8px
+
+  // @include respond(phone){font-size: 37.5%;}         //1rem = 8px
+
+  @include respond(bigDesktop){font-size: 75%;}       //1rem = 12px
+}
+
+body {
+  box-sizing: border-box;
+  padding: 3rem;
+  @include respond(tabletPort){padding: 0;}
+}
